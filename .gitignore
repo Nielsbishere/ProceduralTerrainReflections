@@ -1,0 +1,10 @@
+.vs/
+*.db
+api/glfw/docs/
+api/glew/doc/
+api/lunar/include/bin/
+api/lunar/include/Debug/
+api/lunar/include/lib/
+api/lunar/include/x64/
+Debug/
+Release/

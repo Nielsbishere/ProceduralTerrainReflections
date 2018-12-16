@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\osomi">
+      <UniqueIdentifier>{bd95e108-d98e-49dc-8c7e-7185b75a769a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\osomi\world">
+      <UniqueIdentifier>{bdc70fed-f228-4fa0-a506-262ea808981b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\osomi\world\mesh">
+      <UniqueIdentifier>{8de9bc6b-1ede-4d08-85ec-e365f9724fcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\osomi\math">
+      <UniqueIdentifier>{d86aa6f8-19dc-42b9-8bd2-551448813516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\osomi\math\types">
+      <UniqueIdentifier>{d2454dd4-6f63-4858-9f3b-3229df573618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\math">
+      <UniqueIdentifier>{9e0939b4-3049-4206-8091-83a88aad6d7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\math\types">
+      <UniqueIdentifier>{fbec1d07-3079-4d6b-9c22-7e6e27c41def}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\osomi\math\noise">
+      <UniqueIdentifier>{6d086b88-a544-47c2-b926-97b1af17bac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\osomi\helper">
+      <UniqueIdentifier>{875a998f-e908-4515-92b4-bf33d2bb7a33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\helper">
+      <UniqueIdentifier>{bcfed096-623d-447a-82b7-153458fa117b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="World\Mesh\WorldMesh.h">
+      <Filter>Header Files\osomi\world\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Types\mat4.h">
+      <Filter>Header Files\osomi\math\types</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Math.h">
+      <Filter>Header Files\osomi\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Types\vec2.h">
+      <Filter>Header Files\osomi\math\types</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Types\vec3.h">
+      <Filter>Header Files\osomi\math\types</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Types\vec4.h">
+      <Filter>Header Files\osomi\math\types</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Noise\SimplexNoise.h">
+      <Filter>Header Files\osomi\math\noise</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\ArrayHelper.h">
+      <Filter>Header Files\osomi\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\BinaryHelper.h">
+      <Filter>Header Files\osomi\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\ClassHelper.h">
+      <Filter>Header Files\osomi\helper</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Math\Types\mat4.cpp">
+      <Filter>Source Files\math\types</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Types\vec2.cpp">
+      <Filter>Source Files\math\types</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Types\vec3.cpp">
+      <Filter>Source Files\math\types</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Types\vec4.cpp">
+      <Filter>Source Files\math\types</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Math.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\ArrayHelper.cpp">
+      <Filter>Source Files\helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\BinaryHelper.cpp">
+      <Filter>Source Files\helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\ClassHelper.cpp">
+      <Filter>Source Files\helper</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

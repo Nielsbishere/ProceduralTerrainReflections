@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Helper\ArrayHelper.cpp">
+      <Filter>Source\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\BinaryHelper.cpp">
+      <Filter>Source\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\ClassHelper.cpp">
+      <Filter>Source\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Types\mat4.cpp">
+      <Filter>Source\Math\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Types\vec2.cpp">
+      <Filter>Source\Math\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Types\vec3.cpp">
+      <Filter>Source\Math\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Types\vec4.cpp">
+      <Filter>Source\Math\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Math.cpp">
+      <Filter>Source\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper\StringHelper.cpp">
+      <Filter>Source\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Raycast.cpp">
+      <Filter>Source\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Render\Light\Light.cpp">
+      <Filter>Source\World\Render\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Render\Light\LightEffect.cpp">
+      <Filter>Source\World\Render\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Application.cpp">
+      <Filter>Source\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Window.cpp">
+      <Filter>Source\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\KeyHandler.cpp">
+      <Filter>Source\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\Texture.cpp">
+      <Filter>Source\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Shader.cpp">
+      <Filter>Source\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Mesh\Mesh.cpp">
+      <Filter>Source\Render\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Mesh\WorldMesh.cpp">
+      <Filter>Source\World\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Render\Skybox.cpp">
+      <Filter>Source\World\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Time\Timer.cpp">
+      <Filter>Source\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="World\Render\Water\Water.cpp">
+      <Filter>Source\World\Render\Water</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Helper\ArrayHelper.h">
+      <Filter>Headers\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\BinaryHelper.h">
+      <Filter>Headers\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\ClassHelper.h">
+      <Filter>Headers\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Types\mat4.h">
+      <Filter>Headers\Math\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Types\vec2.h">
+      <Filter>Headers\Math\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Types\vec3.h">
+      <Filter>Headers\Math\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Types\vec4.h">
+      <Filter>Headers\Math\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Noise\SimplexNoise.h">
+      <Filter>Headers\Math\Noise</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Math.h">
+      <Filter>Headers\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper\StringHelper.h">
+      <Filter>Headers\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Raycast.h">
+      <Filter>Headers\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Render\Light\Light.h">
+      <Filter>Headers\World\Render\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Render\Light\LightEffect.h">
+      <Filter>Headers\World\Render\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Application.h">
+      <Filter>Headers\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Window.h">
+      <Filter>Headers\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\State.h">
+      <Filter>Headers\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\KeyHandler.h">
+      <Filter>Headers\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Texture.h">
+      <Filter>Headers\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="API\stb\stb_image.h">
+      <Filter>Headers\API\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Shader.h">
+      <Filter>Headers\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Mesh\Mesh.h">
+      <Filter>Headers\Render\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Mesh\WorldMesh.h">
+      <Filter>Headers\World\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Render\Skybox.h">
+      <Filter>Headers\World\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Time\Timer.h">
+      <Filter>Headers\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Render\Water\Water.h">
+      <Filter>Headers\World\Render\Water</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{de7bfc13-79bd-4d5f-acf8-7be957ff49be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Helper">
+      <UniqueIdentifier>{2761a27e-f3e5-4c70-8962-77b021d41a4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Math">
+      <UniqueIdentifier>{9190d903-b23c-4e22-a758-890180a4f5e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Math\Types">
+      <UniqueIdentifier>{7411d456-2074-42ab-ac3a-1c0df467dfb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Math\Noise">
+      <UniqueIdentifier>{433b6bbf-8aba-453f-bdda-beab7e15241d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\World">
+      <UniqueIdentifier>{a8fb6490-ff09-46e9-aeba-02cf6d70220e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\World\Mesh">
+      <UniqueIdentifier>{6b1776c2-05d9-453e-a655-ea5e922c61c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{3d359a9c-863b-445c-86a9-0209124c9343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Helper">
+      <UniqueIdentifier>{60a5b56b-c159-4ca9-a328-0c874cf8cec7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Math">
+      <UniqueIdentifier>{50ab88ac-e0e4-4406-82d4-dd5a9a00c906}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Math\Types">
+      <UniqueIdentifier>{533014d6-2940-48db-a0d2-21772deee388}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\World\Render">
+      <UniqueIdentifier>{cbd02433-3fa0-43c4-8b08-8a1e26e80486}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\World\Render\Light">
+      <UniqueIdentifier>{91a45a56-7faf-45f7-bffb-2bae917bc6c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\World">
+      <UniqueIdentifier>{b7a51f8a-7962-4cac-bafb-09ca9a70cfb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\World\Mesh">
+      <UniqueIdentifier>{65c69bb5-e041-4307-95f9-2eba004b0322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\World\Render">
+      <UniqueIdentifier>{87033105-85eb-473e-9179-f1d292f7bd4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\World\Render\Light">
+      <UniqueIdentifier>{c4f11cb9-66fc-4716-9ad9-83d8908175c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application">
+      <UniqueIdentifier>{cacc9b85-b64b-43d7-a8ec-3a30cdb49527}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Application">
+      <UniqueIdentifier>{1a4f6158-cff8-4cf3-b9a8-d3284b9a9723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\API">
+      <UniqueIdentifier>{cdbed90e-ac1e-49cb-88be-a0040d02016b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\API\stb">
+      <UniqueIdentifier>{b347c95f-42d9-4b40-89db-0d2ddc7f061a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Image">
+      <UniqueIdentifier>{5cb77d15-a17f-4cdd-8ae4-d9c06b6abb3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Image">
+      <UniqueIdentifier>{3e262306-589c-477a-91a7-33e511a93911}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Render">
+      <UniqueIdentifier>{19a63c05-cccd-4268-9b03-1f95650012d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Render">
+      <UniqueIdentifier>{230cce13-ec4b-44b9-a89c-a49d32360109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Render\Mesh">
+      <UniqueIdentifier>{803579e9-7e8d-417f-8d67-5016ebaed73c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Render\Mesh">
+      <UniqueIdentifier>{1709eee1-7e3e-4d8c-b38f-6b0a1e495d2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Time">
+      <UniqueIdentifier>{7aea13cd-f194-48ce-8cbc-a59d6f1dec57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Time">
+      <UniqueIdentifier>{57a0fb59-1daf-4131-92b4-f68900d6a093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\World\Render\Water">
+      <UniqueIdentifier>{0f6647ed-e937-4f52-80c5-e1380819906e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\World\Render\Water">
+      <UniqueIdentifier>{95fc70c2-7b82-4aad-a594-a1405090eb09}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

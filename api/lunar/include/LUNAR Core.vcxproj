@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="bin|Win32">
+      <Configuration>bin</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="bin|x64">
+      <Configuration>bin</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="lib|Win32">
+      <Configuration>lib</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="lib|x64">
+      <Configuration>lib</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="API\stb\stb_image.h" />
+    <ClInclude Include="Application\Application.h" />
+    <ClInclude Include="Application\KeyHandler.h" />
+    <ClInclude Include="Application\State.h" />
+    <ClInclude Include="Application\Window.h" />
+    <ClInclude Include="Helper\ArrayHelper.h" />
+    <ClInclude Include="Helper\BinaryHelper.h" />
+    <ClInclude Include="Helper\ClassHelper.h" />
+    <ClInclude Include="Helper\StringHelper.h" />
+    <ClInclude Include="Image\Texture.h" />
+    <ClInclude Include="Math\Math.h" />
+    <ClInclude Include="Math\Noise\SimplexNoise.h" />
+    <ClInclude Include="Math\Raycast.h" />
+    <ClInclude Include="Math\Types\mat4.h" />
+    <ClInclude Include="Math\Types\vec2.h" />
+    <ClInclude Include="Math\Types\vec3.h" />
+    <ClInclude Include="Math\Types\vec4.h" />
+    <ClInclude Include="Render\Mesh\Mesh.h" />
+    <ClInclude Include="Render\Shader.h" />
+    <ClInclude Include="Time\Timer.h" />
+    <ClInclude Include="World\Mesh\WorldMesh.h" />
+    <ClInclude Include="World\Render\Light\Light.h" />
+    <ClInclude Include="World\Render\Light\LightEffect.h" />
+    <ClInclude Include="World\Render\Skybox.h" />
+    <ClInclude Include="World\Render\Water\Water.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application\Application.cpp" />
+    <ClCompile Include="Application\KeyHandler.cpp" />
+    <ClCompile Include="Application\Window.cpp" />
+    <ClCompile Include="Helper\ArrayHelper.cpp" />
+    <ClCompile Include="Helper\BinaryHelper.cpp" />
+    <ClCompile Include="Helper\ClassHelper.cpp" />
+    <ClCompile Include="Helper\StringHelper.cpp" />
+    <ClCompile Include="Image\Texture.cpp" />
+    <ClCompile Include="Math\Math.cpp" />
+    <ClCompile Include="Math\Raycast.cpp" />
+    <ClCompile Include="Math\Types\mat4.cpp" />
+    <ClCompile Include="Math\Types\vec2.cpp" />
+    <ClCompile Include="Math\Types\vec3.cpp" />
+    <ClCompile Include="Math\Types\vec4.cpp" />
+    <ClCompile Include="Render\Mesh\Mesh.cpp" />
+    <ClCompile Include="Render\Shader.cpp" />
+    <ClCompile Include="Time\Timer.cpp" />
+    <ClCompile Include="World\Mesh\WorldMesh.cpp" />
+    <ClCompile Include="World\Render\Light\Light.cpp" />
+    <ClCompile Include="World\Render\Light\LightEffect.cpp" />
+    <ClCompile Include="World\Render\Skybox.cpp" />
+    <ClCompile Include="World\Render\Water\Water.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{27E0AB58-07A2-43C8-B14E-4940ADD547AF}</ProjectGuid>
+    <RootNamespace>TUC</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>LUNAR Core</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='lib|Win32'">
+    <PlatformToolset>v140</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='lib|x64'">
+    <PlatformToolset>v140</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='bin|x64'">
+    <PlatformToolset>v140</PlatformToolset>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='bin|Win32'">
+    <PlatformToolset>v140</PlatformToolset>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='lib|x64'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>$(OutDir)../../api/glew/include;$(OutDir)../../api/glfw/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>$(OutDir)../../api/glew/lib/Release/Win32/glew32.lib;$(OutDir)../../api/glfw/lib-vc2015/glfw3.lib;%(AdditionalLibraryDirectories)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='bin|x64'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>$(OutDir)../../api/glew/include;$(OutDir)../../api/glfw/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(OutDir)../../api/glew/lib/Release/x64;$(OutDir)../../api/glfw/lib-vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='bin|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)../api/glew/include;$(OutDir)../api/glfw/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(OutDir)../api/glew/lib/Release/Win32;$(OutDir)../api/glfw/lib-vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='lib|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)../api/glew/include;$(OutDir)../api/glfw/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>$(OutDir)../api/glew/lib/Release/Win32/glew32.lib;$(OutDir)../api/glfw/lib-vc2015/glfw3.lib;%(AdditionalLibraryDirectories)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
